@@ -14,14 +14,14 @@ const App = () => {
     ];
 
     return (
-        <>
+        <div className="todo-app">
             <AppHeader todo={1} done={3}/>
             <div className='top-panel d-flex'>
                 <SearchPanel/>
                 <ItemsStatusFilter/>
             </div>
             <TodoList todos={todoData}/>
-        </>
+        </div>
     )
 };
 
