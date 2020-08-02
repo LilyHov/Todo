@@ -5,6 +5,15 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import App from './components/app';
 
+fetch('https://swapi.dev/api/people/1')
+    .then((res) => {
+        return res.json();
+    })
+    .then((res) => {
+        console.log(
+            res
+        );
+    });
 
 ReactDOM.render(<App />,
   document.getElementById('root'));
